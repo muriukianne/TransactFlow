@@ -9,8 +9,8 @@ import './styles/mobile-optimizations.css';
 const preloadCriticalResources = () => {
   // Preload critical images - using relative paths for production
   const criticalImages = [
-    '/assets/images/hero_image.jpeg',
-    '/assets/images/success-rate.png',
+    '/src/assets/images/hero/hero_image.jpeg',
+    '/src/assets/images/logos/success-rate.png',
   ];
   
   criticalImages.forEach(src => {
