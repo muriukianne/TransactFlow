@@ -8,7 +8,7 @@ A professional, responsive business website template built with React and Vite. 
 
 **📱 Live Demo**: [https://transactflow-demo.vercel.app](https://transactflow-demo.vercel.app)
 
-![TransactFlow Preview](https://via.placeholder.com/800x400/0A4834/FFFFFF?text=TransactFlow+Preview)
+![TransactFlow Preview](public/images/preview.png)
 
 ## 🚀 Features
 

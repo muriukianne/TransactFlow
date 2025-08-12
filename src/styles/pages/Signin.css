@@ -54,7 +54,7 @@
 .form-input-group label {
     display: block;
     font-size: 1em;
-    color: #0A4834;
+    color: #0A4834 !important;
     margin-bottom: 10px;
     font-weight: 500;
 }

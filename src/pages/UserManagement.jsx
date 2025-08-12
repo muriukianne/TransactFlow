@@ -55,7 +55,7 @@ const UserManagement = () => {
     closeModal();
     showToast('User deleted (demo)');
   };
-  const handleLogin = user => { showToast(`Demo: Login as ${user.name}`); };
+  const handleLogin = () => { navigate('/signin'); };
   const handleImport = async () => {
     setLoading(true);
     await new Promise(res => setTimeout(res, 1200));
@@ -127,7 +127,7 @@ const UserManagement = () => {
                       <FaTrash title="Delete" onClick={() => openModal('delete', user)} />
                     </div>
                   </td>
-                  <td><button className="btn login" onClick={() => handleLogin(user)} disabled={loading}>Login</button></td>
+                  <td><button className="btn login" onClick={handleLogin} disabled={loading}>Login</button></td>
                 </tr>
               ))}
             </tbody>
