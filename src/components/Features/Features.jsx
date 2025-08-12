@@ -6,9 +6,9 @@ import '../../styles/components/Features.css';
 // To add/remove features, simply edit this array.
 // Each feature should have an icon, title, and description.
 // ---
-import strategicConsultingIcon from '../../assets/images/icons/StrategicConsulting .jpg';
-import digitalTransformationIcon from '../../assets/images/icons/DigitalTransformation  .jpg';
-import perfomanceOptimizationIcon from '../../assets/images/icons/PerfomanceOptimization .jpg';
+import strategicConsultingIcon from '../../assets/images/icons/StrategicConsulting.jpg';
+import digitalTransformationIcon from '../../assets/images/icons/DigitalTransformation.jpg';
+import perfomanceOptimizationIcon from '../../assets/images/icons/PerfomanceOptimization.jpg';
 
 const features = [
   {

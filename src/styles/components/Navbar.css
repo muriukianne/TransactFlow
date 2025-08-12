@@ -204,11 +204,11 @@
   margin-left: 0.5rem;
   padding: 0;
   background: none;
-  border: none;
-  outline: none;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
   display: flex;
   align-items: center;
-  /* Optimize for touch */
   -webkit-tap-highlight-color: transparent;
   transition: transform 0.2s ease-out;
 }
@@ -223,10 +223,9 @@
   width: 38px;
   height: 38px;
   object-fit: cover;
-  background: none;
+  background: #fff;
   box-shadow: none;
   vertical-align: middle;
-  /* Optimize image rendering */
   image-rendering: -webkit-optimize-contrast;
 }
 
@@ -245,11 +244,15 @@
   gap: 0;
   font-size: 16px;
   font-weight: 500;
-  /* Smooth animation */
   animation: dropdownFadeIn 0.2s ease-out;
-  /* Hardware acceleration */
   transform: translateZ(0);
   will-change: transform, opacity;
+  list-style: none;
+  background: #fff !important;
+}
+.profile-dropdown li {
+  list-style: none;
+  background: transparent !important;
 }
 
 @keyframes dropdownFadeIn {

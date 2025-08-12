@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import LoadingSpinner from '../components/LoadingSpinner';
 import { FaCheckCircle, FaEdit } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import Modal from '../components/Modal';
@@ -34,7 +35,7 @@ const ProfileSettings = () => {
     // Simulate async save
     await new Promise(res => setTimeout(res, 1500));
     setLoading(false);
-    setToast({ open: true, message: 'Profile updated (demo only)' });
+  setToast({ open: true, message: 'Profile updated (demo only)' });
   };
   const isValid = field => form[field] && form[field].length > 2;
 

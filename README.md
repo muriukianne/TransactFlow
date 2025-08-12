@@ -2,11 +2,13 @@
 
 A professional, responsive business website template built with React and Vite. Perfect for consulting firms, digital agencies, and business service providers.
 
-**🎯 Envato Marketplace Item** - Professional business website template with modern design and comprehensive features.
+**🎯 Marketplace Ready** - Professional business website template with modern design and comprehensive features.
+
+> **Note:** This template is intended for future submission to the Envato Marketplace, but has not yet been submitted or accepted. This README will be updated if/when the item is listed.
 
 **📱 Live Demo**: [https://transactflow-demo.vercel.app](https://transactflow-demo.vercel.app)
 
-![TransactFlow Preview](https://via.placeholder.com/800x400/0A4834/FFFFFF?text=TransactFlow+Preview)
+![TransactFlow Preview](public/images/preview.png)
 
 ## 🚀 Features
 
@@ -48,7 +50,7 @@ Before you begin, ensure you have the following installed:
 
 ### **Step 1: Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/transactflow.git
+git clone https://github.com/muriukianne/transactflow.git
 cd transactflow
 ```
 
@@ -318,14 +320,16 @@ npx vite-bundle-analyzer dist
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Note**: This item is also licensed under the Envato Market Standard License for marketplace distribution. See [license.txt](license.txt) for full Envato license details.
+-->
+
+**Note:** This project is currently only licensed under the MIT License. Envato licensing will apply if/when the template is accepted and listed on the Envato Marketplace.
 
 ## 🤝 Support
 
 For support and questions:
 - **Documentation**: Check this README
 - **Issues**: Create an issue on GitHub
-- **Email**: contact@yourcompany.com
+- **Email**: muriukianne05@gmail.com
 
 ## 🙏 Credits
 
