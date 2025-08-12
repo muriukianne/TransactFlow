@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { FaEdit, FaTrash, FaEye } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+
 import Modal from '../components/Modal';
 import Toast from '../components/Toast';
+import LoadingSpinner from '../components/LoadingSpinner';
 import usersData from '../data/users';
 import '../styles/pages/UserManagement.css';
 
@@ -41,11 +43,17 @@ const UserManagement = () => {
   const handleEdit = async e => {
     e.preventDefault();
     setLoading(true);
-    await new Promise(res => setTimeout(res, 1200));
-    setUsers(users.map(u => u.id === form.id ? form : u));
-    setLoading(false);
-    closeModal();
-    showToast('User updated (demo)');
+    try {
+      await new Promise(res => setTimeout(res, 800)); // faster feedback
+      setUsers(users.map(u => u.id === form.id ? form : u));
+      setLoading(false);
+      closeModal();
+      showToast('User updated successfully!');
+    } catch (err) {
+      setLoading(false);
+      console.error('Error in handleEdit:', err);
+      showToast('An error occurred while saving.');
+    }
   };
   const handleDelete = async id => {
     setLoading(true);
@@ -92,9 +100,9 @@ const UserManagement = () => {
           <h2>Members</h2>
           <div className="user-mgmt-actions">
             <button className="btn primary" onClick={() => openModal('add')} disabled={loading}>Add new</button>
-            <button className="btn" onClick={handleImport} disabled={loading}>Import members</button>
-            <button className="btn" onClick={handleExport} disabled={loading}>Export members (Excel)</button>
-            <button className="btn filter" onClick={() => openModal('filter')} disabled={loading}>Filter</button>
+            <button className="btn primary" onClick={handleImport} disabled={loading}>Import members</button>
+            <button className="btn primary" onClick={handleExport} disabled={loading}>Export members (Excel)</button>
+            <button className="btn primary" onClick={() => openModal('filter')} disabled={loading}>Filter</button>
           </div>
         </header>
         <section className="user-mgmt-table-wrap">
@@ -152,8 +160,8 @@ const UserManagement = () => {
           <label htmlFor="add-photo">Photo URL</label>
           <input id="add-photo" name="photo" value={form.photo} onChange={handleFormChange} />
           <div className="modal-actions">
-            <button className="btn" type="button" onClick={closeModal} disabled={loading}>Cancel</button>
-            <button className="btn primary" type="submit" disabled={loading}>Add</button>
+            <button className="action-btn cancel" type="button" onClick={closeModal} disabled={loading}>Cancel</button>
+            <button className="action-btn save" type="submit" disabled={loading}>Add</button>
           </div>
         </form>
       </Modal>
@@ -175,8 +183,11 @@ const UserManagement = () => {
           <label htmlFor="edit-photo">Photo URL</label>
           <input id="edit-photo" name="photo" value={form.photo} onChange={handleFormChange} />
           <div className="modal-actions">
-            <button className="btn" type="button" onClick={closeModal} disabled={loading}>Cancel</button>
-            <button className="btn primary" type="submit" disabled={loading}>Save</button>
+            <button className="action-btn cancel" type="button" onClick={closeModal} disabled={loading}>Cancel</button>
+            <button className="action-btn save" type="submit" disabled={loading}>Save</button>
+          </div>
+          <div>
+            
           </div>
         </form>
       </Modal>
@@ -196,8 +207,8 @@ const UserManagement = () => {
         <h3 className="modal-title">Delete User?</h3>
         <p>Are you sure you want to delete <b>{modal.user?.name}</b>?</p>
         <div className="modal-actions">
-          <button className="btn" onClick={closeModal} disabled={loading}>Cancel</button>
-          <button className="btn primary" onClick={() => handleDelete(modal.user.id)} disabled={loading}>Delete</button>
+          <button className="action-btn cancel" onClick={closeModal} disabled={loading}>Cancel</button>
+          <button className="action-btn delete" onClick={() => handleDelete(modal.user.id)} disabled={loading}>Delete</button>
         </div>
       </Modal>
       {/* Filter Modal */}
