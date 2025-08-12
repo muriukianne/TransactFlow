@@ -6,9 +6,10 @@ A professional, responsive business website template built with React and Vite. 
 
 > **Note:** This template is intended for future submission to the Envato Marketplace, but has not yet been submitted or accepted. This README will be updated if/when the item is listed.
 
-**Live Demo**: (https://transact-flow.vercel.app/)
+**Live Demo:** [https://transact-flow.vercel.app/](https://transact-flow.vercel.app/)
 
-**Preview**: (public/images/preview.png)
+**Preview:**
+![Preview](public/images/preview.png)
 
 ## Features
 
