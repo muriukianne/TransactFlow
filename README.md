@@ -2,52 +2,51 @@
 
 A professional, responsive business website template built with React and Vite. Perfect for consulting firms, digital agencies, and business service providers.
 
-**🎯 Marketplace Ready** - Professional business website template with modern design and comprehensive features.
+**Marketplace Ready** - Professional business website template with modern design and comprehensive features.
 
 > **Note:** This template is intended for future submission to the Envato Marketplace, but has not yet been submitted or accepted. This README will be updated if/when the item is listed.
 
-**📱 Live Demo**:(https://transact-flow.vercel.app/)
+**Live Demo**: (https://transact-flow.vercel.app/)
 
-**📱 Preview**:(public/images/preview.png)
+**Preview**: (public/images/preview.png)
 
-(public/images/preview.png)
-## 🚀 Features
+## Features
 
 ### **Core Features**
-- ✅ **Responsive Design** - Works perfectly on all devices
-- ✅ **Modern UI/UX** - Clean, professional design
-- ✅ **Fast Performance** - Optimized for speed and Core Web Vitals
-- ✅ **SEO Optimized** - Meta tags, structured data, and semantic HTML
-- ✅ **Accessibility Compliant** - WCAG 2.1 AA standards
-- ✅ **Cross-Browser Compatible** - Works on all modern browsers
+- **Responsive Design** - Works perfectly on all devices
+- **Modern UI/UX** - Clean, professional design
+- **Fast Performance** - Optimized for speed and Core Web Vitals
+- **SEO Optimized** - Meta tags, structured data, and semantic HTML
+- **Accessibility Compliant** - WCAG 2.1 AA standards
+- **Cross-Browser Compatible** - Works on all modern browsers
 
 ### **Pages & Components**
-- 🏠 **Homepage** - Hero section, features, testimonials, blog preview
-- 📄 **About** - Company story, team, mission & vision
-- 💼 **Solutions** - Service offerings and capabilities
-- 📝 **Blog** - Article listing and individual blog posts
-- 💰 **Pricing** - Service packages and pricing plans
-- ❓ **FAQ** - Frequently asked questions
-- 📞 **Contact** - Contact form and company information
-- 👤 **User Dashboard** - Admin panel and user management
-- ⚙️ **Profile Settings** - User account management
+- **Homepage** - Hero section, features, testimonials, blog preview
+- **About** - Company story, team, mission & vision
+- **Solutions** - Service offerings and capabilities
+- **Blog** - Article listing and individual blog posts
+- **Pricing** - Service packages and pricing plans
+- **FAQ** - Frequently asked questions
+- **Contact** - Contact form and company information
+- **User Dashboard** - Admin panel and user management
+- **Profile Settings** - User account management
 
 ### **Technical Features**
-- ⚡ **Vite Build System** - Fast development and optimized production builds
-- 🎨 **CSS Customization** - Easy color scheme and styling changes
-- 📱 **Mobile-First Design** - Optimized for mobile performance
-- 🔧 **Modular Components** - Reusable React components
-- 📊 **Analytics Ready** - Vercel Analytics integration
-- 🚀 **Deployment Ready** - Optimized for Vercel, Netlify, and other platforms
+- **Vite Build System** - Fast development and optimized production builds
+- **CSS Customization** - Easy color scheme and styling changes
+- **Mobile-First Design** - Optimized for mobile performance
+- **Modular Components** - Reusable React components
+- **Analytics Ready** - Vercel Analytics integration
+- **Deployment Ready** - Optimized for Vercel, Netlify, and other platforms
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 - **Node.js** (version 16.0 or higher)
 - **npm** (comes with Node.js) or **yarn**
 - **Git** (for version control)
 
-## 🛠️ Installation
+## Installation
 
 ### **Step 1: Clone the Repository**
 ```bash
@@ -71,7 +70,7 @@ yarn dev
 
 The application will be available at `http://localhost:5173`
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 TransactFlow/
@@ -114,7 +113,7 @@ TransactFlow/
 └── README.md            # This file
 ```
 
-## 🎨 Customization
+## Customization
 
 ### **Color Scheme**
 The website uses a professional green color palette. To customize colors:
@@ -187,7 +186,7 @@ const teamMembers = [
 2. Update logo references in `src/components/Navbar.jsx`
 3. Update favicon in `public/favicon.ico`
 
-## 🚀 Deployment
+## Deployment
 
 ### **Deploy to Vercel (Recommended)**
 1. Install Vercel CLI:
@@ -215,7 +214,7 @@ The project is optimized for any static hosting platform:
 - Firebase Hosting
 - Any CDN
 
-## 📱 Browser Support
+## Browser Support
 
 - ✅ Chrome (latest)
 - ✅ Firefox (latest)
@@ -223,7 +222,7 @@ The project is optimized for any static hosting platform:
 - ✅ Edge (latest)
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🔧 Configuration
+## Configuration
 
 ### **Environment Variables**
 Create a `.env` file in the root directory:
@@ -247,7 +246,7 @@ export default defineConfig({
 });
 ```
 
-## 📊 Performance Optimization
+## Performance Optimization
 
 The website is optimized for performance with:
 - **Lazy Loading** - Components load on demand
@@ -256,14 +255,14 @@ The website is optimized for performance with:
 - **Critical CSS** - Above-the-fold styles inlined
 - **Mobile Optimization** - Touch-friendly and fast on mobile
 
-## 🛡️ Security
+## Security
 
 - **HTTPS Ready** - Configured for secure connections
 - **XSS Protection** - React's built-in XSS protection
 - **Content Security Policy** - Headers configured in deployment
 - **Input Validation** - Form validation implemented
 
-## 📈 SEO Features
+## SEO Features
 
 - **Meta Tags** - Proper title, description, and Open Graph tags
 - **Structured Data** - JSON-LD schema markup
@@ -271,7 +270,7 @@ The website is optimized for performance with:
 - **Robots.txt** - Search engine crawling configuration
 - **Fast Loading** - Optimized for Core Web Vitals
 
-## 🎯 Accessibility
+## Accessibility
 
 - **WCAG 2.1 AA Compliant** - Meets accessibility standards
 - **Keyboard Navigation** - Full keyboard accessibility
@@ -279,7 +278,7 @@ The website is optimized for performance with:
 - **Color Contrast** - High contrast ratios
 - **Focus Indicators** - Clear focus states
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### **Common Issues**
 
@@ -317,7 +316,7 @@ npm run build
 npx vite-bundle-analyzer dist
 ```
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -325,28 +324,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Note:** This project is currently only licensed under the MIT License. Envato licensing will apply if/when the template is accepted and listed on the Envato Marketplace.
 
-## 🤝 Support
+## Support
 
 For support and questions:
 - **Documentation**: Check this README
 - **Issues**: Create an issue on GitHub
 - **Email**: muriukianne05@gmail.com
 
-## 🙏 Credits
+## Credits
 
 - **Icons**: React Icons
 - **Fonts**: Google Fonts (Roboto)
 - **Images**: Replace with your own images
 - **Design**: Custom design for TransactFlow
 
-## 📄 Changelog
+## Changelog
 
 ### **v1.0.0** (Current)
-- ✅ Initial release
-- ✅ Responsive design
-- ✅ Performance optimizations
-- ✅ Accessibility compliance
-- ✅ SEO optimization
+- Initial release
+- Responsive design
+- Performance optimizations
+- Accessibility compliance
+- SEO optimization
 
 ---
 
